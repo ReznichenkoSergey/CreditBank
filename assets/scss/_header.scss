@@ -141,7 +141,7 @@
         padding-right: 0;
     }
 
-    @include xs {
+    @include sm {
         padding-left: 0;
         padding-right: 0;
         padding-bottom: 0;
@@ -186,6 +186,11 @@
         background-color: $color-primary;
         transition: font-weight 0.5s;
 
+        &::placeholder {
+            transition: color 0.5s;
+            color: darken($color: white, $amount: 10%);
+        }
+
         &:focus,
         &:hover,
         &:active {
@@ -193,10 +198,6 @@
             border-bottom: 2px solid white;
             font-weight: bold;
             box-shadow: none;
-        }
-
-        &::placeholder {
-            color: white;
         }
     }
 

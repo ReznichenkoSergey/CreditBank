@@ -260,32 +260,43 @@ h2 {
   transition: font-weight 0.5s;
 }
 
+.sender__input::-webkit-input-placeholder {
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+  color: #e6e6e6;
+}
+
+.sender__input::-moz-placeholder {
+  -moz-transition: color 0.5s;
+  transition: color 0.5s;
+  color: #e6e6e6;
+}
+
+.sender__input:-ms-input-placeholder {
+  -ms-transition: color 0.5s;
+  transition: color 0.5s;
+  color: #e6e6e6;
+}
+
+.sender__input::-ms-input-placeholder {
+  -ms-transition: color 0.5s;
+  transition: color 0.5s;
+  color: #e6e6e6;
+}
+
+.sender__input::placeholder {
+  -webkit-transition: color 0.5s;
+  -o-transition: color 0.5s;
+  transition: color 0.5s;
+  color: #e6e6e6;
+}
+
 .sender__input:focus, .sender__input:hover, .sender__input:active {
   border: none;
   border-bottom: 2px solid white;
   font-weight: bold;
   -webkit-box-shadow: none;
           box-shadow: none;
-}
-
-.sender__input::-webkit-input-placeholder {
-  color: white;
-}
-
-.sender__input::-moz-placeholder {
-  color: white;
-}
-
-.sender__input:-ms-input-placeholder {
-  color: white;
-}
-
-.sender__input::-ms-input-placeholder {
-  color: white;
-}
-
-.sender__input::placeholder {
-  color: white;
 }
 
 .sender .form-group {
@@ -860,6 +871,11 @@ h2 {
   .navbar-right {
     margin-top: 0;
   }
+  .sender {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+  }
   .sender .form-group:last-of-type {
     padding-left: 0;
     padding-right: 0;
@@ -877,10 +893,5 @@ h2 {
   }
   h3 {
     font-size: 1.25rem;
-  }
-  .sender {
-    padding-left: 0;
-    padding-right: 0;
-    padding-bottom: 0;
   }
 }

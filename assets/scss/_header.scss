@@ -1,0 +1,135 @@
+.header {
+    //@extend %margin-bottom-lg;
+    margin-bottom: 10px;
+
+    &-container {
+        position: relative;
+        background-color: $color-primary;
+    }
+}
+
+.header-logo {
+    display: flex;
+    padding: 10px 0;
+    text-align: left;
+    align-items: center;
+    background-color: $color-primary;
+
+    &__image {
+        padding-left: 10px;
+        margin-right: 5px;
+    }
+
+    &__title {
+        display: block;
+        color: $color-light;
+        font-family: $font-header;
+        font-size: 1rem;
+        letter-spacing: 0.33em;
+        margin-right: -$gap;
+    }
+}
+
+.header-phone {
+    color: white;
+    text-align: right;
+    margin-top: 20px;
+
+    &__title {
+        padding-right: 50px;
+    }
+}
+
+.description {
+    margin-bottom: 20px;
+}
+
+.description-text {
+    min-height: 350px;
+    display: grid;
+    justify-content: center;
+
+    &__caption {
+        display: block;
+        color: black;
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+    }
+    &__text {
+        display: block;
+        color: black;
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+
+        & strong {
+            font-weight: normal !important;
+        }
+    }
+}
+
+.description-logo {
+    min-height: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.conditions {
+    margin-bottom: 20px;
+    padding-top: 10px;
+
+    &-header {
+        &__caption {
+            width: 100%;
+            text-align: center;
+            font-family: $font-header;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+    }
+
+    &-element {
+        text-align: center;
+
+        &__title {
+            display: block;
+            margin-bottom: 10px;
+
+            & h3 {
+                font-size: 1rem;
+            }
+        }
+
+        &__value {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+            font-size: 1rem;
+        }
+    }
+}
+
+.sender{
+    background-color: $color-primary;
+
+    &-container{
+        height: 100px;
+        background-color: $color-primary;
+    }
+}
+
+.cash {
+    margin-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    &-container {
+        display: grid;
+    }
+
+    &__title {
+        font-weight: bold;
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+}

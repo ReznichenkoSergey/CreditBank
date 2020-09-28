@@ -108,12 +108,60 @@
     }
 }
 
-.sender{
+.sender {
     background-color: $color-primary;
+    padding-top: 20px;
+    padding-bottom: 20px;
 
-    &-container{
+    padding-left: 40px;
+    padding-right: 40px;
+
+    &-container {
         height: 100px;
         background-color: $color-primary;
+    }
+
+    &-btn-container {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 0;
+    }
+
+    &__btn {
+        color: white;
+        min-width: 250px;
+        background-color: #47bd4d;
+    }
+
+    &__input {
+        color: white;
+        border: none;
+        border-bottom: 2px solid white;
+        border-radius: 0;
+        background-color: $color-primary;
+        transition: font-weight 0.5s;
+
+        &:focus,
+        &:hover,
+        &:active {
+            border: none;
+            border-bottom: 2px solid white;
+            font-weight: bold;
+            box-shadow: none;
+        }
+
+        &::placeholder {
+            color: white;
+        }
+    }
+
+    .form-group {
+        padding-left: 20px;
+        padding-right: 20px;
+
+        &:nth-of-type(4){
+margin-bottom: 40px;
+        }
     }
 }
 

@@ -211,9 +211,9 @@ h2 {
 
 .sender {
   background-color: #525BC2;
+  margin-bottom: 40px;
   padding-top: 20px;
   padding-bottom: 20px;
-  margin-bottom: 40px;
   padding-left: 40px;
   padding-right: 40px;
 }
@@ -841,6 +841,7 @@ h2 {
   }
   .sender__btn {
     width: 100%;
+    height: 50px;
   }
   .cash-container {
     padding-left: 20px;
@@ -876,5 +877,10 @@ h2 {
   }
   h3 {
     font-size: 1.25rem;
+  }
+  .sender {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
   }
 }

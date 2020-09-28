@@ -95,6 +95,7 @@ h2 {
 
 .header {
   margin-bottom: 50px;
+  min-width: 350px;
 }
 
 .header-container {
@@ -132,10 +133,7 @@ h2 {
   color: white;
   text-align: right;
   margin-top: 20px;
-}
-
-.header-phone__title {
-  padding-right: 50px;
+  white-space: nowrap;
 }
 
 .description {
@@ -143,12 +141,6 @@ h2 {
 }
 
 .description-text {
-  /*
-        background-image: url("../img/people.png");
-        background-position: 50% 50%;
-        background-repeat: no-repeat;
-        overflow: hidden;
-*/
   min-height: 350px;
   display: grid;
   -webkit-box-pack: center;
@@ -184,12 +176,6 @@ h2 {
           justify-content: center;
 }
 
-/*
-.description-logo {
-    min-height: 50px;
-    display: flex;
-    justify-content: center;
-}*/
 .conditions {
   margin-bottom: 20px;
   padding-top: 10px;
@@ -230,18 +216,6 @@ h2 {
   margin-bottom: 40px;
   padding-left: 40px;
   padding-right: 40px;
-  /*
-    @include md {
-        & .form-group {
-            padding-left: 0;
-            padding-right: 30px;
-
-            &:last-of-type {
-                padding-left: 0px;
-                padding-right: 0px;
-            }
-        }
-    }*/
 }
 
 .sender-container {
@@ -810,7 +784,9 @@ h2 {
 
 .footer {
   margin-bottom: 10px;
+  min-width: 350px;
   padding-top: 0;
+  white-space: nowrap;
 }
 
 .footer-container {
@@ -860,6 +836,10 @@ h2 {
   .description-logo img {
     display: none;
   }
+  .sender {
+    padding-left: 0;
+    padding-right: 0;
+  }
   .sender__btn {
     width: 100%;
   }
@@ -879,6 +859,10 @@ h2 {
   }
   .navbar-right {
     margin-top: 0;
+  }
+  .sender .form-group:last-of-type {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 

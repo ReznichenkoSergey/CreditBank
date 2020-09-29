@@ -884,6 +884,9 @@ h2 {
   .description-logo img {
     display: none;
   }
+  .conditions-header__caption {
+    margin-bottom: 10px;
+  }
   .sender {
     padding-left: 0;
     padding-right: 0;
@@ -914,6 +917,9 @@ h2 {
     padding-right: 0;
     padding-bottom: 0;
   }
+  .sender .form-group:nth-of-type(5) {
+    margin-bottom: 20px;
+  }
   .sender .form-group:last-of-type {
     padding-left: 0;
     padding-right: 0;
@@ -937,6 +943,9 @@ h2 {
   }
   .header-phone {
     padding-right: 0;
+  }
+  .conditions {
+    margin-bottom: 0;
   }
   .conditions-element__value:nth-of-type(2) {
     min-height: 70px;

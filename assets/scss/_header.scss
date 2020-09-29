@@ -146,6 +146,10 @@
     margin-bottom: 20px;
     padding-top: 10px;
 
+    @include xs {
+        margin-bottom: 0;
+    }
+
     &-header {
         &__caption {
             width: 100%;
@@ -153,6 +157,10 @@
             font-family: $font-header;
             font-size: 1.5rem;
             font-weight: bold;
+
+            @include md {
+                margin-bottom: 10px;
+            }
         }
     }
 
@@ -263,6 +271,10 @@
 
         &:nth-of-type(5) {
             margin-bottom: 40px;
+
+            @include sm {
+                margin-bottom: 20px;
+            }
         }
 
         &:last-of-type {

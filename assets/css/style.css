@@ -143,6 +143,22 @@ h2 {
 
 .description {
   margin-bottom: 20px;
+  position: relative;
+}
+
+.description-overlay {
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background-color: white;
+  opacity: 60%;
+  z-index: -1;
+}
+
+.description-image {
+  display: none;
 }
 
 .description-text {
@@ -151,6 +167,14 @@ h2 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  /*
+        @include md {
+            background-image: url("../img/people.png");
+            background-position: 50% 50%;
+            background-repeat: no-repeat;
+            overflow: hidden;
+            z-index: 1;
+        }*/
 }
 
 .description-text__caption {
@@ -823,11 +847,21 @@ h2 {
 }
 
 @media (max-width: 991.8px) {
-  .description-text {
-    background-image: url("../img/people.png");
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
+  .description-image {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background-color: white;
     overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    z-index: -2;
   }
   .description-text__caption {
     text-align: center;

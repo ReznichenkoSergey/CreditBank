@@ -40,7 +40,7 @@
     margin-top: 20px;
     white-space: nowrap;
 
-    & a{
+    & a {
         text-decoration: none;
         color: white;
     }
@@ -52,18 +52,48 @@
 
 .description {
     margin-bottom: 20px;
+    position: relative;
+
+    &-overlay {
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        background-color: white;
+        opacity: 60%;
+        z-index: -1;
+    }
+
+    &-image {
+        display: none;
+
+        @include md {
+            position: absolute;
+            right: 0;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            background-color: white;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            z-index: -2;
+        }
+    }
 
     &-text {
+        min-height: 350px;
+        display: grid;
+        justify-content: center;
+        /*
         @include md {
             background-image: url("../img/people.png");
             background-position: 50% 50%;
             background-repeat: no-repeat;
             overflow: hidden;
-        }
-
-        min-height: 350px;
-        display: grid;
-        justify-content: center;
+            z-index: 1;
+        }*/
 
         &__caption {
             display: block;

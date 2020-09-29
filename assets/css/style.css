@@ -161,6 +161,12 @@ h2 {
   display: none;
 }
 
+.description-image img {
+  max-height: 350px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .description-text {
   min-height: 350px;
   display: grid;
@@ -861,6 +867,9 @@ h2 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     z-index: -2;
   }
   .description-text__caption {

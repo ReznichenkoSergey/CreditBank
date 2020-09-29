@@ -136,6 +136,11 @@ h2 {
   white-space: nowrap;
 }
 
+.header-phone a {
+  text-decoration: none;
+  color: white;
+}
+
 .description {
   margin-bottom: 20px;
 }
@@ -883,5 +888,14 @@ h2 {
   }
   h3 {
     font-size: 1.25rem;
+  }
+  .header-logo__image {
+    padding-left: 0;
+  }
+  .header-phone {
+    padding-right: 0;
+  }
+  .conditions-element__value:nth-of-type(2) {
+    min-height: 70px;
   }
 }
